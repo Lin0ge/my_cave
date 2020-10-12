@@ -5,11 +5,15 @@
     require('app/inc/functions.php');
     include('app/nav.php'); 
 
-    ?>
+    
 
 
 
-<h1>remove modo</h1>
+$id = $_GET['id'];
+       $sth = $db->prepare("DELETE FROM users WHERE id = $id");
+       $sth->execute();
+       header("Location:table-modo.php");
+        ?>
 
 
 

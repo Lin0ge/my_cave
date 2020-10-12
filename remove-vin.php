@@ -13,7 +13,11 @@
 <h1>remove vin</h1>
 
 
+<?php
+    suprArticle();
 
+    header('Location:table-vin.php');
+?>
 
 
 

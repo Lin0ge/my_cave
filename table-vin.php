@@ -14,7 +14,7 @@
 <h1>table vin</h1>
 
 <?php
-    displayAllVin();
+    tableauvin();
 ?>
 
 </section>

@@ -38,33 +38,23 @@ if(isset($_POST['submit-login'])){
 ?>
 
 
-<section>
-    <div >
-        <div >
-            <?php if (isset($message)){
-                echo "<div class='col-12'> ".$message." </div>";
-            } ?>
-            <div >
-                <h1>Se connecter</h1>
-                
-                <form action="<?= htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
-                    <div >
-                        <label for="exampleInputEmail1">Adresse e-mail</label>
-                        <input type="text" name="user_email"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez votre mail...">
-                    </div>
-                    <div>
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" name="user_password"  id="exampleInputPassword1" placeholder="Entrez votre mot de passe...">
-                    </div>
-                    <button type="submit" name="submit-login" >Connexion</button>
-                </form>
-            </div>
-            <div>
-            
-        </div>
-    </div>
-</section>
 
+
+
+<section>
+<h1>“Il y a plus de philosophie dans une bouteille de vin que dans un livre”
+
+Louis Pasteur.</h1>
+
+<div class="carousel">
+
+<?php
+    displayAllVin();
+?>
+
+</div>
+
+</section>
 
 <?php include('app/footer.php'); ?>
 

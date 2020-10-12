@@ -12,6 +12,9 @@
 <h1>page vin</h1>
 
 
+<?php
+    displayOneVin();
+?>
 
 
 
